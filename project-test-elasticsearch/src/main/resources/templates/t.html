@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+
+<!--<table>-->
+    <!--<tbody>-->
+    <!--<tr th:each="obj : ${poems}">-->
+        <!--<td th:text="${obj.id}">${obj.id}</td>-->
+        <!--<td th:text="${obj.title}">${obj.title}</td>-->
+        <!--<td th:text="${obj.content}">${obj.content}</td>-->
+    <!--</tr>-->
+    <!--</tbody>-->
+<!--</table>-->
+<div th:each="obj : ${poems}">
+    <h1 th:text="${obj.title}"></h1>
+    <p th:text="${obj.content}"></p>
+</div>
+
+</body>
+</html>
